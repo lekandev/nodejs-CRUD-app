@@ -14,5 +14,5 @@ CRUD application made with NodeJs, Express and MongoDb (Task solution for Zuri I
 ## DELETE
 
 # Links
-Live link - 
-GitHub link -
+* Live link - 
+* GitHub link - https://github.com/lekandev/nodejs-CRUD-app/
