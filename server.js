@@ -1,5 +1,8 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const uri = mongodb+srv://lekandev:<password>@cluster0.sbgkm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 
 const app = express();
 
