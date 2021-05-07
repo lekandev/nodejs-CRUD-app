@@ -73,14 +73,15 @@ app.get('/', (req, res) => {
 
 // PUT request to /people/:id route
 app.put('/people/:id', (req, res) => {
-    Person.findByIdAndUpdate(req.params.id, req.body, (err) => {
-        if (err) {
-            return res.status(500).json({ message: err })
+    Person.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err) => {
+        if (err, person) {
+            res.status(500).json({message: err})
         } else {
-            return res.status(500).json({ message: "data updated successfully" });
+            res.status(200).json({message: "data updated successfully!"})
+            return person.save()
         }
     })
-});
+})
 
 // DELETE request to /people/:id
 app.delete('/people/:id', (req, res) => {
@@ -96,4 +97,4 @@ app.delete('/people/:id', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`Server don start at ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));

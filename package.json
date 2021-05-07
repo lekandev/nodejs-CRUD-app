@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/lekandev/nodejs-CRUD-app#readme",
   "dependencies": {
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.7"
   }
