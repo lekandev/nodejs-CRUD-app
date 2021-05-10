@@ -4,14 +4,16 @@
   "description": "CRUD application made with NodeJs, Express and MongoDb (Task solution for Zuri Internship)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lekandev/nodejs-CRUD-app.git"
   },
-  "keywords": [],
+  "keywords": [
+    "crud",
+    "zuri-task"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -22,5 +24,8 @@
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.7"
+  },
+  "engines": {
+    "node": "14.15.5"
   }
 }

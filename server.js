@@ -73,11 +73,19 @@ app.get('/', (req, res) => {
 
 // PUT request to /people/:id route
 app.put('/people/:id', (req, res) => {
-    Person.findByIdAndUpdate(req.params.id, req.body, (err) => {
+    Person.findByIdAndUpdate(req.params.id, req.body, (err, person) => {
         if (err) {
             return res.status(500).json({ message: err })
+        } else if (!person){
+            return res.status(404).json({ message: "data not found" });
         } else {
-            return res.status(500).json({ message: "data updated successfully" });
+            person.save((err, savedPerson) => {
+                if (err) {
+                    return res.status(400).json({ message: err})
+                } else {
+                    return res.status(200).json({ message: "data updated successfully!" })
+                }
+            });
         }
     })
 });
@@ -96,4 +104,4 @@ app.delete('/people/:id', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`Server don start at ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));
