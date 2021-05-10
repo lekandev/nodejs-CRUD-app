@@ -16,6 +16,10 @@ db.on('connected', () => {
     console.log("connected to mongoDb successfully");
 })
 
+db.on('error', () => {
+    console.log("Mahd oh!");
+})
+
 // Schema for data
 const PersonSchema = new mongoose.Schema({
     name: {
