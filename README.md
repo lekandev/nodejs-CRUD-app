@@ -5,16 +5,16 @@ CRUD application made with NodeJs, Express and MongoDb (Task solution for Zuri I
 
 # Routes
 
-## CREATE DATA ENTRY
+## CREATE
 POST request to '/create' route
 
-## GET DATA ENTRIES
+## GET
 GET request to '/' route
 
-## UPDATE A DATA ENTRY
+## UPDATE
 PUT request to '/people/:id' route
 
-## DELETE A DATA ENTRY
+## DELETE
 DELETE request to '/people/:id' route
 
 ## link to API
