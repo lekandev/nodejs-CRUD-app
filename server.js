@@ -17,7 +17,7 @@ db.on('connected', () => {
 })
 
 db.on('error', () => {
-    console.log("Mahd oh!");
+    console.log("error connecting to MongoDb!");
 })
 
 // Schema for data
