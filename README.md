@@ -14,5 +14,5 @@ PUT request to /people/:id route
 ## DELETE
 DELETE request to /people/:id route
 
-## link to api
+## link to API
 * Live link - https://zuricrudtask.herokuapp.com/
