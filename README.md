@@ -14,5 +14,5 @@ PUT request to /people/:id route
 ## DELETE
 DELETE request to /people/:id route
 # Links
-* Live link - https://zuri-crud.herokuapp.com/
+* Live link - https://zuricrudtask.herokuapp.com/
 * GitHub link - https://github.com/lekandev/nodejs-CRUD-app/
